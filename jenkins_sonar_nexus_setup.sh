@@ -16,8 +16,8 @@ sudo /etc/init.d/sonar start
 sudo apt-get install -y maven
 sudo rm -f /etc/maven/settings.xml
 sudo wget https://raw.githubusercontent.com/roybhaskar9/samplejava/master/settings.xml -O /etc/maven/settings.xml
-# Installing Nexus
-sudo puppet module install hubspot-nexus
+# Installing Nexus - pest-nexus works
+sudo puppet module install pest-nexus
 wget https://gitlab.com/roybhaskar9/devops/raw/master/release/jenkins/jenkinsserver/nexus.pp
 sudo puppet apply nexus.pp
 # Installing Jenkins
